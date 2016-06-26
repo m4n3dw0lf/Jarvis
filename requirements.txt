@@ -1,0 +1,9 @@
+decorator==4.0.10
+praw==3.5.0
+PyAudio==0.2.9
+pyserial==3.1.1
+pyttsx==1.1
+requests==2.10.0
+six==1.10.0
+SpeechRecognition==3.4.6
+update-checker==0.11
