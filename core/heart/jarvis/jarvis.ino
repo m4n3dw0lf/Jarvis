@@ -51,7 +51,7 @@ void left(){
 }
 
 void super(){
-  Keyboard.press(KEY_LEFT_ALT);
+  Keyboard.press(KEY_LEFT_GUI);
   Keyboard.releaseAll();
   delay(300);
 }
