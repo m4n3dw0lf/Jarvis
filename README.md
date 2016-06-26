@@ -9,8 +9,8 @@ To enable all Jarvis functions correctly it will be necessary to have an Arduino
 
 Steps>
 open a terminal <br />
-$sudo git clone https://github.com/m4n3dw0lf/Jarvis/ <br />
 
+$sudo git clone https://github.com/m4n3dw0lf/Jarvis/ <br />
 (OPTIONAL)<br />
 plug your Arduino Leonardo <br />
 open the arduino IDE > Tools > Board then select Arduino Leonardo <br />
@@ -21,7 +21,16 @@ select the jarvis.ino file then upload to the Arduino Leonardo. <br />
 (CLOSE OPTIONAL) <br />
 
 $cd Jarvis <br/>
+
 $sudo pip install -r requirements.txt <br />
+(if PyAudio gcc error)<br />
+$sudo apt-get update<br />
+$sudo apt-get install libasound-dev libjack-jackd2-dev portaudio19-dev python-pyaudio<br />
+$sudo pip install -r requiremenst.txt<br /> 
+(Close PyAudio error) <br />
+
+Now you are ready to rock:<br />
+(Stay in the main directory to use all resources)<br/>
 $sudo ./jarvis.py<br />
 
 # Voice Commands
