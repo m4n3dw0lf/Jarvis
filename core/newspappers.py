@@ -40,17 +40,17 @@ class RedditNews(object):
 	    	for sub in self.subs:
     	    		self.headlines.append(sub.title)
    	    	self.first = " ".join(self.headlines)
-   	    	self.news = self.first.replace(".", ". \n\nNext\n\n")
+   	    	self.news = self.first.replace(".", ". \n\n Next \n\n")
     	    	self.news.encode('ascii', 'ignore')
     	    	return self.news
 
 	def speak_headlines(self, news=[]):
     		try:
-			print self.news
+			#print self.news
     			self.Say(news)
 		except KeyboardInterrupt:
-			print "\n[*] User requested shutdown"
-			Jarvis.Say("See you soon sir")
+			print "[*] User requested interrupt"
 			exit()
 		except Exception as e:
 			print "[!] Exception caught: {}".format(e)
+			exit()

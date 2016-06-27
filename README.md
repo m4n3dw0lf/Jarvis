@@ -58,14 +58,21 @@ $sudo ./jarvis.py<br />
 
 - start [program]:	Ask Jarbas to start a program below.<br />
 
-	* ARDUINO LEONARDO REQUIRED *<br />
+	ARDUINO LEONARDO REQUIRED *<br />
 
  browser   = start google-chrome browser<br />
  terminal  = start a terminal<br />
 
+[*] input [keystroke]:   Send a command to the Arduino Leonardo without entering editor mode<br />
+
+        ARDUINO LEONARDO REQUIRED *<br />
+
+ voice commands: (Same as EDITOR MODE )<br />
+
+
 - editor: 		Start the editor mode.<br />
 
-	* ARDUINO LEONARDO REQUIRED * <br />
+	ARDUINO LEONARDO REQUIRED * <br />
 
 	[EDITOR MODE]
 

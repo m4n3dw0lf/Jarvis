@@ -98,7 +98,11 @@ class Jarvis(object):
 
 	def start(self,path):
 		try:
-			devnull = open(os.devnull, 'wb')
-			p = subprocess.Popen(['python', path], shell=False, stdout=subprocess.PIPE, stderr=devnull)
+			#devnull = open(os.devnull, 'wb')
+			#p = subprocess.Popen(["python", path], shell=False, stdout=subprocess.PIPE, stderr=devnull)
+			with open("log/jarvisout.txt", "a+") as stdout, open("log/jarviserr.txt", "a+") as stderr:
+				self.p = subprocess.Popen(["python", path], shell=False, stdout=stdout, stderr=stderr)
+
 		except Exception as e:
 			print "[!] Exception caught: {}".format(e)
+
