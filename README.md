@@ -69,7 +69,7 @@ $sudo ./jarvis.py<br />
 
 	[EDITOR MODE]
 
-voice commands: (anything else will be typed)<br />
+ voice commands: (anything else will be typed)<br />
 
  - forward   = tab
  - back      = (shift+tab)
