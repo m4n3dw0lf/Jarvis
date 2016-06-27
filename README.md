@@ -63,7 +63,7 @@ $sudo ./jarvis.py<br />
  browser   = start google-chrome browser<br />
  terminal  = start a terminal<br />
 
-[*] input [keystroke]:   Send a command to the Arduino Leonardo without entering editor mode<br />
+- input [keystroke]:   Send a command to the Arduino Leonardo without entering editor mode<br />
 
 	ARDUINO LEONARDO REQUIRED *<br />
 
