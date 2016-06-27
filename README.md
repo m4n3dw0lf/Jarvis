@@ -65,7 +65,7 @@ $sudo ./jarvis.py<br />
 
 [*] input [keystroke]:   Send a command to the Arduino Leonardo without entering editor mode<br />
 
-        ARDUINO LEONARDO REQUIRED *<br />
+	ARDUINO LEONARDO REQUIRED *<br />
 
  voice commands: (Same as EDITOR MODE )<br />
 
