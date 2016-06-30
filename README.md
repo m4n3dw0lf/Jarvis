@@ -10,6 +10,7 @@ the aim of this Jarvis project is to enable any developer to use Jarvis in their
 
 ##Jarvis needs external libraries such SpeechRecognition and pyttsx, to install the libraries you need to run: <br />
 
+- $cd Jarvis
 - $sudo pip install -r requirements.txt <br />
  (if PyAudio gcc error)<br />
  $sudo apt-get update<br />
