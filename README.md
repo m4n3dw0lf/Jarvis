@@ -1,6 +1,6 @@
 # Jarvis
 
-Jarvis is a python voice command assistant library that i have been developing as feature of my pentest framework PytheM</ br>
+Jarvis is a python voice command assistant library that i have been developing as feature of my pentest framework PytheM
 link: https://github.com/m4n3dw0lf/PytheM<br/>
 the aim of this Jarvis project is to enable any developer to use Jarvis in their work<br/>
  
