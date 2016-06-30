@@ -1,98 +1,38 @@
 # Jarvis
 
-Jarvis is a python voice command assistant that uses the Arduino Leonardo keyboard library more speech recognition
-Google API to control the GNU / Linux operating systems by voice commands, for example , browse the web and input , delete, and press the keystrokes like Return or TAB with the keyboard using the bridge between the voice recognition and Arduino Leonardo keyboard library.
+Jarvis is a python voice command assistant library that i have been developing as feature of my pentest framework PytheM</ br>
+link: https://github.com/m4n3dw0lf/PytheM<br/>
+the aim of this Jarvis project is to enable any developer to use Jarvis in their work<br/>
+ 
 
 # Installation 
+- $sudo git clone https://github.com/m4n3dw0lf/PytheM
 
-To enable all Jarvis functions correctly it will be necessary to have an Arduino Leonardo and a GNU/Linux gnome graphic environment.
+##Jarvis needs external libraries such SpeechRecognition and pyttsx, to install the libraries you need to run: <br />
 
-Steps>
-open a terminal <br />
+- $sudo pip install -r requirements.txt <br />
+ (if PyAudio gcc error)<br />
+ $sudo apt-get update<br />
+ $sudo apt-get install libasound-dev libjack-jackd2-dev portaudio19-dev python-pyaudio<br />
+ $sudo pip install -r requiremenst.txt<br /> 
+ (Close PyAudio error) <br />
 
-$sudo git clone https://github.com/m4n3dw0lf/Jarvis/ <br />
-(OPTIONAL)<br />
-plug your Arduino Leonardo <br />
-open the arduino IDE > Tools > Board then select Arduino Leonardo <br />
-go to Tools> Serial port and check the serial port of the Arduino Leonardo <br />
-press CTRL+O <br />
-navigate to the directory: path/../Jarvis/core/heart/jarvis/ <br />
-select the jarvis.ino file then upload to the Arduino Leonardo. <br />
-(CLOSE OPTIONAL) <br />
+move the jarvis.py script to the folder of your project create a new script and import jarvis<br />
 
-$cd Jarvis <br/>
+### Example
+```
+#!/usr/bin/python2.7
 
-$sudo pip install -r requirements.txt <br />
-(if PyAudio gcc error)<br />
-$sudo apt-get update<br />
-$sudo apt-get install libasound-dev libjack-jackd2-dev portaudio19-dev python-pyaudio<br />
-$sudo pip install -r requiremenst.txt<br /> 
-(Close PyAudio error) <br />
+# or another directory like core.jarvis
+from jarvis import Jarvis
 
-Now you are ready to rock:<br />
-(Stay in the main directory to use all resources)<br/>
-$sudo ./jarvis.py<br />
+jarvis = Jarvis()
 
-# Voice Commands
-
-- help:	 		Print a help message.<br />
-
-- exit:		 	Terminate the program.<br />
-
-- sleep:		Sleep untill you say "Jarvis".<br />
-
-- newspaper:		Read the top trending news from reddit.<br />
-
-- say [message]:      	Ask Jarvis to say something.<br />
-
- examples:<br />
-
-  say i like donnuts<br />
-  say my name is jarvis<br />
-
-- run [script]:		Run .sh script the you place on the scripts folder with chmod +x<br />
-
- example:<br />
-
-  run firewall		| Place a firewall.sh on the scripts folder and give execution privilege first<br />
-
-- start [program]:	Ask Jarbas to start a program below.<br />
-
-	ARDUINO LEONARDO REQUIRED *<br />
-
- browser   = start google-chrome browser<br />
- terminal  = start a terminal<br />
-
-- input [keystroke]:   Send a command to the Arduino Leonardo without entering editor mode<br />
-
-	ARDUINO LEONARDO REQUIRED *<br />
-
- voice commands: (Same as EDITOR MODE )<br />
+jarvis.Say("Hello World!")
+jarvis.Say("What is your name?")
+response = jarvis.Listen()
+print "response"
+jarvis.Say(response)
+```
 
 
-- editor: 		Start the editor mode.<br />
-
-	ARDUINO LEONARDO REQUIRED * <br />
-
-	[EDITOR MODE]
-
- voice commands: (anything else will be typed)<br />
-
- - forward   = tab
- - back      = (shift+tab)
- - up        = up arrow
- - down      = down arrow
- - right     = right arrow
- - left      = left arrow
- - super     = super/windows
- - slash     = slash(/)
- - backspace = backspace(erase character)
- - erase     = press backspace 10 times
- - space     = space(spacebar)
- - enter     = enter(return)
- - close     = close(alt+f4)
- - escape    = escape(esc)
- - exit	     = leaves editor mode<br />
-
-
-by: m4n3dw0lf
