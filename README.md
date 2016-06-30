@@ -8,7 +8,7 @@ the aim of this Jarvis project is to enable any developer to use Jarvis in their
 # Installation 
 - $sudo git clone https://github.com/m4n3dw0lf/PytheM
 
-##Jarvis needs external libraries such SpeechRecognition and pyttsx, to install the libraries you need to run: <br />
+###Jarvis needs external libraries such SpeechRecognition and pyttsx, to install the libraries you need to run: <br />
 
 - $cd Jarvis
 - $sudo pip install -r requirements.txt <br />
@@ -20,7 +20,7 @@ the aim of this Jarvis project is to enable any developer to use Jarvis in their
 
 move the jarvis.py script to the folder of your project create a new script and import jarvis<br />
 
-### Example
+## Example
 ```
 #!/usr/bin/python2.7
 
