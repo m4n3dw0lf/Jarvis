@@ -31,7 +31,7 @@ jarvis = Jarvis()
 jarvis.Say("Hello World!")
 jarvis.Say("What is your name?")
 response = jarvis.Listen()
-print "response"
+print response
 jarvis.Say(response)
 ```
 
