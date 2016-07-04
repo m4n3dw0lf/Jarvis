@@ -24,16 +24,17 @@ move the jarvis.py script to the folder of your project create a new script and 
 ```
 #!/usr/bin/python2.7
 
-# or another directory like core.jarvis
+          # or another directory like core.jarvis
 from jarvis import Jarvis
 
-jarvis = Jarvis()
 
-jarvis.Say("Hello World!")
-jarvis.Say("What is your name?")
-response = jarvis.Listen()
-print response
-jarvis.Say(response)
+if __name__ == "__main__":
+  jarvis = Jarvis()
+  jarvis.Say("Hello World!")
+  jarvis.Say("What is your name?")
+  response = jarvis.Listen()
+  print response
+  jarvis.Say(response)
 ```
 
 
