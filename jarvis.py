@@ -90,7 +90,7 @@ class Jarvis(object):
 		if self.result is not None:
 			for i in self.result:
 				self.array.append(i)
-			if "Arduino Leonardo" in self.array:
+			if "Arduino" in self.array:
 				index = self.array.index("Arduino Leonardo")
 				nport = index -1
 				port = self.array[nport]
