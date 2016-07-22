@@ -79,6 +79,6 @@ ALSA lib pcm_dmix.c:1029:(snd_pcm_dmix_open) unable to open slave
 ALSA lib pcm_dsnoop.c:606:(snd_pcm_dsnoop_open) unable to open slave
 ALSA lib pcm_dmix.c:1029:(snd_pcm_dmix_open) unable to open slave
 ALSA lib pcm.c:2266:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
-ALSA lib pcm.c:2266:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2266:(snd_pcm_open_nouepdate) Unknown PCM cards.pcm.center_lfe
 ALSA lib pcm.c:2266:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
-ALSA lib pcm_dmix.c:1029:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm_dmix.c:1029:(snd_pcm_dmix_open) unable to open slav
