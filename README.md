@@ -1,40 +1,53 @@
-# Jarvis
+# Jarvis v1.0
 
-Jarvis is a python voice command assistant library that i have been developing as feature of my pentest framework PytheM
-link: https://github.com/m4n3dw0lf/PytheM<br/>
-the aim of this Jarvis project is to enable any developer to use Jarvis in their work<br/>
+Jarvis, python voice command assistant.
  
 
-# Installation 
-- $sudo git clone https://github.com/m4n3dw0lf/PytheM
+## Installation 
 
-###Jarvis needs external libraries such SpeechRecognition and pyttsx, to install the libraries you need to run: <br />
+### Dependencies
+- libasound-dev 
+- libjack-jackd2-dev 
+- portaudio19-dev 
+- python-pyaudio 
+- build-essential 
+- python-dev 
+- libespeak1
 
+
+### Installation Guide
+- $sudo apt-get install libasound-dev libjack-jackd2-dev portaudio19-dev python-pyaudio build-essential python-dev libespeak1
+- $sudo git clone https://github.com/m4n3dw0lf/Jarvis
 - $cd Jarvis
-- $sudo pip install -r requirements.txt <br />
- (if PyAudio gcc error)<br />
- $sudo apt-get update<br />
- $sudo apt-get install libasound-dev libjack-jackd2-dev portaudio19-dev python-pyaudio<br />
- $sudo pip install -r requiremenst.txt<br /> 
- (Close PyAudio error) <br />
-
-move the jarvis.py script to the folder of your project create a new script and import jarvis<br />
-
-## Example
-```
-#!/usr/bin/python2.7
-
-          # or another directory like core.jarvis
-from jarvis import Jarvis
+- $sudo pip install -r requirements.txt
+- $sudo ./jarvis.py -h
 
 
-if __name__ == "__main__":
-  jarvis = Jarvis()
-  jarvis.Say("Hello World!")
-  jarvis.Say("What is your name?")
-  response = jarvis.Listen()
-  print response
-  jarvis.Say(response)
-```
+## Basics
 
+- Start Jarvis as subprocess.
+"""
+./jarvis.py
+"""
+
+- Get help message.
+"""
+./jarvis.py -h
+     or
+./jarvis.py --help
+"""
+
+- Stop Jarvis process running in background.
+"""
+./jarvis.py -s
+     or
+./jarvis.py --stop
+"""
+
+- Start Jarvis in verbose mode.
+"""
+./jarvis.py -v
+     or
+./jarvis.py --verbose
+"""
 
