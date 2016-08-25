@@ -1,6 +1,6 @@
 # Jarvis v1.0
 
-Jarvis, python voice command assistant.
+Jarvis, python voice controlled assistant.
  
 
 ## Installation 
@@ -31,23 +31,23 @@ Jarvis, python voice command assistant.
 """
 
 - Get help message.
-"""
+```
 ./jarvis.py -h
      or
 ./jarvis.py --help
-"""
+```
 
 - Stop Jarvis process running in background.
-"""
+```
 ./jarvis.py -s
      or
 ./jarvis.py --stop
-"""
+```
 
 - Start Jarvis in verbose mode.
-"""
+```
 ./jarvis.py -v
      or
 ./jarvis.py --verbose
-"""
+```
 
