@@ -26,9 +26,9 @@ Jarvis, python voice controlled assistant.
 ## Basics
 
 - Start Jarvis as subprocess.
-"""
+```
 ./jarvis.py
-"""
+```
 
 - Get help message.
 ```
