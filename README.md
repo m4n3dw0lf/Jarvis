@@ -30,7 +30,7 @@ Jarvis, python voice controlled assistant.
 ./jarvis.py
 ```
 
-- Get help message.
+- Help message.
 ```
 ./jarvis.py -h
      or
